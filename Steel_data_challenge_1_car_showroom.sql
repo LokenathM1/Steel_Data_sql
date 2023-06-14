@@ -62,13 +62,6 @@ VALUES (1, 1, 1, '2021-01-01'),
 
 
 
-
-
-9. What is the name and city of the salesperson who sold the most number of cars in the year 2023?
-10. What is the name and age of the salesperson who generated the highest revenue in the year 2022?
-
-describe cars;
-
 /*1. What are the details of all cars purchased in the year 2022?*/
 select s.car_id , c.make , c.type , c.style , c.cost_$,  s.purchase_date
 from sales as s
