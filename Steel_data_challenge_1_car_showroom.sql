@@ -61,7 +61,6 @@ VALUES (1, 1, 1, '2021-01-01'),
 (20, 4, 4, '2023-03-01');
 
 
-
 /*1. What are the details of all cars purchased in the year 2022?*/
 select s.car_id , c.make , c.type , c.style , c.cost_$,  s.purchase_date
 from sales as s
@@ -145,5 +144,3 @@ where year(purchase_date) = 2022
 group by sp.salesman_id
 order by sum(c.cost_$) desc
 limit 1;
-
-
